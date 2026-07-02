@@ -13,8 +13,8 @@ terraform {
   # La "key" (le nom du fichier tfstate) sera écrasée par le pipeline GitHub 
   # pour différencier Dev et Prod.
   backend "azurerm" {
-    resource_group_name  = "RG-B3-Eric"
-    storage_account_name = "sttfstatelabynovepe" # À adapter
+    resource_group_name  = "RG-B3-Hugo"
+    storage_account_name = "hugostterraform" # À adapter
     container_name       = "tfstate"
     key                  = "default.terraform.tfstate"
   }
