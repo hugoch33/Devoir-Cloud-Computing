@@ -1,4 +1,4 @@
-## Exercice 3 — Déploiement Multi‑environnement (Terraform)
+## Devoir 2 — Déploiement Multi‑environnement (Terraform)
 
 Ce README décrit l'Exercice 3 du projet : déployer une infra Azure (VNet, Subnet, VM, ACR) pour trois environnements indépendants : `dev`, `integration`, `prod`.
 ## Objectif
