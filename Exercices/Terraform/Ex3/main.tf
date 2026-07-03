@@ -90,3 +90,16 @@ module "mon_acr" {
   acr_sku          = var.acr_sku
   acr_admin_enabled = var.acr_admin_enabled
 }
+
+# -----------------------------------------------------------------------
+# SECOND ACR (additional registry per environment)
+# -----------------------------------------------------------------------
+module "mon_acr_secondary" {
+  source = "./modules/acr_registry"
+
+  rg_name          = data.azurerm_resource_group.rg.name
+  location         = data.azurerm_resource_group.rg.location
+  acr_name         = var.acr_name_secondary
+  acr_sku          = var.acr_sku
+  acr_admin_enabled = var.acr_admin_enabled
+}

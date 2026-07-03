@@ -126,3 +126,9 @@ variable "acr_admin_enabled" {
   type        = bool
   default     = false
 }
+
+# Nom secondaire pour créer un second registry par environnement
+variable "acr_name_secondary" {
+  description = "Nom du second Azure Container Registry"
+  type        = string
+}

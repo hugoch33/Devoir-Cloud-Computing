@@ -8,3 +8,8 @@ output "acr_login_server" {
   description = "Login server du Azure Container Registry"
   value       = module.mon_acr.acr_login_server
 }
+
+output "acr_login_server_secondary" {
+  description = "Login server du second Azure Container Registry"
+  value       = module.mon_acr_secondary.acr_login_server
+}
